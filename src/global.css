@@ -1,18 +1,18 @@
 @font-face{
     font-family: classyVogue;
-    src: url(D:\Genie%20Hires\geniehires\src\Assets\Fonts\Classyvogueregular.ttf);
+    src: url(../src/Assets/Fonts/Classyvogueregular.ttf);
 }
 @font-face{
     font-family: nexaLight;
-    src: url(D:\Genie%20Hires\geniehires\src\Assets\Fonts\Nexa-ExtraLight.ttf);
+    src: url(../src/Assets/Fonts/Nexa-ExtraLight.ttf);
 }
 @font-face{
     font-family: nexaHeavy;
-    src: url(D:\Genie%20Hires\geniehires\src\Assets\Fonts\Nexa-Heavy.ttf);
+    src: url(../src/Assets/Fonts/Nexa-Heavy.ttf);
 }
 @font-face{
     font-family: ZTGatha;
-    src: url(D:\Genie%20Hires\geniehires\src\Assets\Fonts\ZTGatha.ttf);
+    src: url(../src/Assets/Fonts/ZTGatha.ttf);
 }
 
 *{
