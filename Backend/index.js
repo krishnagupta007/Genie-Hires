@@ -15,8 +15,8 @@ const mongoDB = require('./mongodb')
 mongoDB();
 
 app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
-    res.setHeader("Access-Control-Allow-Origin", "https://genie-hires.vercel.app/");
+//     res.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+//     res.setHeader("Access-Control-Allow-Origin", "https://genie-hires.vercel.app/");
     res.setHeader("Access-Control-Allow-Origin", "https://genie-hires-inc.vercel.app/");
     res.setHeader(
         "Access-Control-Allow-Headers",
