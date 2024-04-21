@@ -1,0 +1,36 @@
+.postjobnav {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
+
+.maindiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 2%;
+}
+
+.leftdiv h1 {
+    font-size: 50px;
+    margin-top: -5%;
+    margin-bottom: 10%;
+}
+
+.leftdiv p {
+    font-family: classyVogue;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 5%;
+}
+
+.leftdiv button {
+    width: 50%;
+    height: 70px;
+    margin-top: 10%;
+}
+
+.rightdiv img {
+    height: 600px;  
+}

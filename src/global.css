@@ -1,0 +1,542 @@
+@font-face{
+    font-family: classyVogue;
+    src: url(D:\Genie%20Hires\geniehires\src\Assets\Fonts\Classyvogueregular.ttf);
+}
+@font-face{
+    font-family: nexaLight;
+    src: url(D:\Genie%20Hires\geniehires\src\Assets\Fonts\Nexa-ExtraLight.ttf);
+}
+@font-face{
+    font-family: nexaHeavy;
+    src: url(D:\Genie%20Hires\geniehires\src\Assets\Fonts\Nexa-Heavy.ttf);
+}
+@font-face{
+    font-family: ZTGatha;
+    src: url(D:\Genie%20Hires\geniehires\src\Assets\Fonts\ZTGatha.ttf);
+}
+
+*{
+    font-family: nexaHeavy;
+    cursor: none;
+}
+
+body{
+    display: grid;
+    height: auto;
+    width: auto;
+    margin: 0px 70px 0px;
+    overflow-x: hidden;
+}
+
+button, #requestOTP, #changePassword{
+    width: 120px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#LeftLogo{
+    margin-top: 50px;
+    width: 250px;
+    mix-blend-mode: darken;
+}
+
+#CenterLogo{
+    aspect-ratio: 12/2;
+    object-fit: contain;
+    mix-blend-mode: darken;
+    place-content: center;
+}
+
+.jobdetails {
+    margin: 0% 20% 0%;
+}
+
+.list{
+    width: fit-content;
+    background-color: #FFF;
+    margin-left: -5.5%;
+    list-style-type: none;
+}
+
+.list-items {
+    padding: 15px 25px;
+    &:hover{
+        background-color: #DDDDDD;
+        border-radius: 30px;
+    }
+}
+
+#description, #jobDescription{
+    width: 92% ;
+    height:auto;
+    padding: 2% 2.5% 2%;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+}
+
+.radiobutton{
+    width: 75%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 6% 4%;
+}
+
+.radiobutton input {
+    height: 30px;
+    width: 30px;
+}
+
+.radiogroup {
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
+
+.radiogroup label {
+    padding-left: 7px;
+    margin-top: 2px;
+    font-size: 18px;
+}
+
+.checkbox label {
+    font-size: 20px;
+}
+
+.checkbox input {
+    margin-top: 2%;
+    width: 30px;
+    height: 30px;
+}
+
+.innerCheckbox {
+    display: grid;
+    margin-top: 3%;
+}
+
+#main {
+    margin-left: 10%;
+    margin-top: -6%;
+}
+
+#sub {
+    margin-left: 10%;
+    margin-top: -2.5%;
+}
+
+#imageinput {
+    width: 100px;
+    height: 100px;
+}
+
+.companylogo {
+    display: flex;
+    place-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.displaylogo {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 5%;
+}
+
+.companylogo {
+    margin-bottom: 2%;
+}
+
+.displaylogo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    mix-blend-mode: lighten;
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.5));
+}
+
+#logoselect {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 5%;
+    width: max-content;
+}
+
+.Cards{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    margin-top: -2%;
+    grid-template-columns:  50% 50%;
+}
+
+.Card{
+    width: 90%;
+    height: 60%;
+    overflow: hidden;
+    display: flex;
+    /* padding: 3%; */
+    padding: 4% 3% 4% 3%;
+    margin-bottom: 4%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.Card:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.Card p{
+    margin-top: -6%;
+    opacity: 50%;
+}
+
+.companyLogo{
+    width: 20%;
+}
+
+.companyLogo div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    /* background-color: #DDDDDD; */
+    filter: drop-shadow(0px 0px 10px #DDDDDD);
+    border-radius: 100px;
+}
+
+.companyLogo img {
+    width: 65px;
+    filter: drop-shadow(0px 0px 10px #DDDDDD);
+}
+
+.Tags{
+    width: 110%;
+    display: flex;
+    margin-top: 5%;
+}
+
+.Tag{
+    width: 100%;
+    height: 40px;
+    max-width: fit-content;
+    padding-left: 11px;
+    padding-right: 11px;
+    display: grid;
+    place-content: center;
+    margin-top: -3%;
+    margin-right: 5%;
+    border-radius: 20px;
+    background-color: #DDDDDD;
+}
+
+#SmallLeftLogo{
+    width: 11%;
+    margin-top: 1.5%;
+    /* margin-right: 5%; */
+}
+
+.JobsNavbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 7%;
+    margin-left: 10px;
+}
+
+#User{
+    width: 30px;
+    height: 30px;
+}
+
+.UserDetails{
+    width: 22%;
+}
+
+.SearchBar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0% 5% 0% 5%;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    /* padding: 0% 2% 0% 2%; */
+}
+
+.SearchBar input {
+    width: 80%;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+} 
+
+#searchIcon{
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+#locationIcon{
+    padding: 10px;
+    width: 27px;
+    height: 27px;
+    border-left: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.jobDetails {
+    width: 80%;
+    max-height: fit-content;
+    margin-top: -5%;
+    margin-left: 4%;
+}
+
+.fullDetails {
+    /* width: 1100px; */
+    width: 85.5%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px 0px 100px;
+    align-items: center;
+    box-shadow: 0px 0px 10px 2px #DDDDDD;
+    border-radius: 10px;
+}
+
+.fullDetails img{
+    width: 100px;
+    filter: drop-shadow(0px 0px 10px #DDDDDD);
+}
+
+.bigThree {
+    margin-top: 2.5%;
+}
+
+.bigThree p {
+    opacity: 50%;
+}
+
+.Description{
+    /* width: 1100px; */
+    width: 85.5%;
+    height: min-content;
+    display: grid;
+    padding: 0px 100px 0px 100px;
+    box-shadow: 0px 0px 10px 2px #DDDDDD;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.Description h4 {
+    font-family: nexaLight;
+    word-spacing: 3px;
+}
+
+.ApplyNow{
+    margin: 5% 25% 5% 25%;
+}
+
+#TextEditor{
+    margin-top: -1%;
+    margin-left: -2%;
+}
+
+ul{
+    list-style-type: disc;
+}
+li, #compDesc{
+    letter-spacing: 1px;
+    font-family: nexaLight;
+    font-weight: 1000;
+    font-size: 18px;
+}
+
+/* input{
+    font-family: nexaLight;
+    font-weight: 1000;
+} */
+
+.main{
+    margin: 5% 20% 5% 20%;
+    display: grid;
+    place-items: center;
+}
+
+.sub, .subGold{
+    width: 150%;
+    display: flex; 
+    align-items: center;
+}
+
+.sub img {
+    filter: drop-shadow(-5px -5px 20px rgba(173, 216, 230, 0.8));
+}
+
+.subGold img {
+    filter: drop-shadow(-5px -5px 20px rgba(216, 230, 20, 0.3));
+}
+
+#centerLogo{
+    width: 30%;
+}
+
+.MoreFilters{
+    display: none;
+    justify-content: space-evenly;
+    place-items: center;
+    margin: -7.6% 9% 3% 17%;
+}
+
+#LinkDetails, #HideFilters{
+    cursor: pointer;
+    opacity: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+#LinkDetails:hover, #HideFilters:hover{
+    opacity: 100%;
+}
+
+.MoreFilters select {
+    width: 150px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+
+.MoreFilters optgroup{
+    font-family: outfit;
+}
+
+.MoreFilters option {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    height: 100%;
+    font-family: nexaLight;
+}
+
+#clearFilter{
+    width: 100%;
+    margin-left: 65%;
+}
+
+.outerDiv{
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.adminForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+}
+
+.form a {
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 5px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+table, th, td, tr {
+    border: 5px solid white;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+td{
+    background-color: #fbe5948e;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+th{
+    background-color: #f7c76c;
+    color: white;
+}
+
+h3{
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
+}
+
+#deleteIcon {
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.2));
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+#adminLogOut{
+    height: 50px;
+    cursor: pointer;
+}
+
+.socialLogos{
+    width: 200%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1% 0% 3% 10%;
+}
+
+.socialLogos img {
+    width: 3%;
+    margin-left: 5%;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+.copyright{
+    color: white;
+    width: 100%;
+}
+
+#requestOTP, #changePassword{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0% 2% 9%;
+    width: 90%;
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 0px 20px 20px 20px ;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99; 
+}

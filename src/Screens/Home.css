@@ -1,0 +1,70 @@
+.homenav {
+    margin-top: 50px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+.navLeft {
+    width: 400px;
+    /* width: 30%; */
+    display: flex;
+    place-content: space-between;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: "Outfit";
+}
+
+.navLeft a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.button{
+    display: flex;
+    place-content: space-between;
+    width: 400px;
+    /* width: max-content; */
+    /* width: 30%; */
+    height: 50px;
+}
+
+#postjob{
+    display: flex;
+    align-items: center;
+    place-content: center;
+    width: 130px; 
+    background-color: white;
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.Home{
+    margin-top: 60px;
+    height: auto;
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Home h1{
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.Home p{
+    font-family: classyVogue;
+    font-weight: 200;
+    font-size: 25px;
+    padding: 0px 280px 50px;
+}
+
+.Home button {
+    margin-top: 10px ;
+    width: 250px;
+    height: 70px;
+    border-radius: 30px;
+    font-size: 25px;
+}

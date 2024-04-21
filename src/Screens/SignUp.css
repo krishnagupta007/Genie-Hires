@@ -1,0 +1,37 @@
+#maintext {
+    width: 100%;
+}
+
+.signup {
+    display: grid;
+    place-content: center;
+    height: 100%;
+}
+
+.signupbtn button {
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.signup a {
+    font-size: 18px;
+    margin-left: 33%;
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+#googlebtn {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    margin-top: 25px;
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.othersignup {
+    margin: 30px 0px 35px;
+}
