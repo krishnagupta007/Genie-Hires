@@ -25,7 +25,7 @@ const handleGoogleLogin = useGoogleLogin({
     });
         toast.success("Log In Success")
         localStorage.setItem("authToken", Response.access_token)
-        setInterval(() => {
+        setTimeout(() => {
             navigate("/")
         }, 3000);
     },
